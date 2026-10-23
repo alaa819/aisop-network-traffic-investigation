@@ -1,126 +1,196 @@
-# CF-01 — Network Traffic Analysis
+# Case File 01: Investigating Network Traffic with Wireshark
 
-[Project overview](../../README.md) · [Workflow](diagrams/investigation-flow.md) · [Capture handling](../../captures/README.md)
+## Case Overview
 
-## Case metadata
-
-| Field | Value |
-| --- | --- |
+| Case Detail | Information |
+|---|---|
 | Case ID | CF-01 |
 | Project | AISOP — Phase 6 |
-| Investigation type | Planned, authorized lab traffic review |
+| Investigation Type | Planned home-lab network traffic review |
 | Analyst | Pending confirmation |
-| Status | Prepared — capture and analysis pending |
-| Alert source | Planned training exercise; no alert supplied |
+| Alert Source | Planned training exercise; no alert supplied |
 | Severity | Pending assessment |
-| Capture date, time, and timezone | Pending |
-| Authorized host and scope | Pending confirmation before capture |
-| Operating system and Wireshark version | Pending verification |
-| Capture interface | Pending selection |
-| Capture duration and packet count | Pending |
-| Capture filename and SHA-256 | Pending; original retained privately |
-| Final disposition | Pending evidence review |
+| Status | Prepared — capture and analysis pending |
+| Affected Host | Pending actual test |
+| Tool | Wireshark — version pending verification |
+| Capture Interface | Pending selection |
+| Capture Date and Timezone | Pending actual test |
+| Final Disposition | Pending evidence review |
 
-## Objective and scope
+## Case Summary
 
-Practice selecting an interface, collecting a short authorized capture, identifying protocols and endpoints, examining DNS and TCP behavior, and producing an evidence-backed assessment. This is a documentation scaffold, not a completed investigation or an incident verdict.
+This case will document an authorized Wireshark investigation of my lab traffic. The test will cover interface selection, packet capture, protocol identification, DNS analysis, TCP connection review, and stream inspection.
 
-The capture must be limited to an approved lab host and activity. Record the capture vantage point, any capture filter, capture start and stop times, timezone, and any dropped-packet indication. Note visibility gaps before drawing conclusions.
+The test has not been performed. All host details, observations, screenshots, and conclusions remain pending until my own evidence is collected and reviewed.
 
-## Evidence register
+## Investigation Objective
 
-All entries below are **planned placeholders**. No PNG files exist yet; `evidence/.gitkeep` preserves the empty folder. Add images and relative Markdown embeds only after collection and privacy review.
+Identify the interface carrying the authorized lab activity, collect a short capture, examine network indicators and DNS/TCP behavior, and reach a conclusion supported by the packets reviewed. Record visibility gaps and distinguish observations from interpretations.
 
-| Step | Planned filename in `evidence/` | Purpose | Status |
-| --- | --- | --- | --- |
-| 1 | `01-wireshark-interfaces.png` | Interface selection | Pending |
-| 2 | `02-live-packet-capture.png` | Capture activity and context | Pending |
-| 3 | `03-protocol-identification.png` | Protocols and endpoints | Pending |
-| 4 | `04-dns-traffic-filter.png` | DNS exchanges | Pending |
-| 5 | `05-tcp-handshake.png` | Connection establishment | Pending |
-| 6 | `06-tcp-header-analysis.png` | TCP field inspection | Pending |
-| 7 | `07-follow-tcp-stream.png` | One conversation in context | Pending |
+## Evidence Collected
 
-## Seven evidence steps
+**Collection pending.** These are the seven planned evidence items; filenames are placeholders only. The `evidence/` folder currently contains only `.gitkeep`. No screenshot images have been created or copied.
 
-### 1. Select the capture interface
+| Step | Evidence | Planned filename |
+|---|---|---|
+| 1 | Available Wireshark interfaces | `01-wireshark-interfaces.png` |
+| 2 | Live packet capture | `02-live-packet-capture.png` |
+| 3 | Protocol and endpoint identification | `03-protocol-identification.png` |
+| 4 | DNS-filtered traffic | `04-dns-traffic-filter.png` |
+| 5 | TCP connection and handshake | `05-tcp-handshake.png` |
+| 6 | TCP header details | `06-tcp-header-analysis.png` |
+| 7 | Follow TCP Stream output | `07-follow-tcp-stream.png` |
 
-Review available interfaces and identify the one associated with the authorized lab traffic. Record the selection and rationale, including any VPN or virtual adapter that affects visibility.
+## Network Indicators
 
-**Evidence:** `01-wireshark-interfaces.png` · **Observation:** Pending.
+| Type | Indicators Observed |
+|---|---|
+| Internal host | Pending actual capture |
+| Router/DNS server | Pending actual capture |
+| External IP addresses | Pending actual capture |
+| Domains/hostnames | Pending actual capture |
+| Ports | Pending actual capture |
+| Protocols | Pending actual capture |
 
-### 2. Collect a short live capture
+## Investigation Timeline
 
-Start capture only after scope approval. Generate a small amount of deliberate lab activity, record what was done and when, then stop and preserve the capture. Record duration, packet count, capture filters, and any packet loss information.
+The actions below are planned, not completed. Record timestamps and packet references during the test.
 
-**Evidence:** `02-live-packet-capture.png` · **Observation:** Pending.
+| Step | Action | Result |
+|---|---|---|
+| 1 | Identify the active lab interface | Pending |
+| 2 | Start and stop a controlled packet capture | Pending |
+| 3 | Review protocols and addresses | Pending |
+| 4 | Apply the `dns` display filter | Pending |
+| 5 | Apply `tcp` and inspect one connection | Pending |
+| 6 | Expand a TCP header | Pending |
+| 7 | Follow the selected TCP stream | Pending |
+| 8 | Evaluate the evidence and record limitations | Pending |
 
-### 3. Identify protocols and endpoints
+## Investigation Workflow
 
-Review the Source, Destination, Protocol, and Info columns. Record only protocols and endpoints actually present, with representative packet numbers and timestamps. Distinguish lab activity from unrelated background activity where the evidence permits.
+This diagram describes the planned investigation method.
 
-**Evidence:** `03-protocol-identification.png` · **Observation:** Pending.
+```mermaid
+flowchart TD
+    A[Confirm authorization and lab scope] --> B[1. Identify interface]
+    B --> C[2. Capture controlled lab traffic]
+    C --> D[Preserve original capture privately]
+    D --> E[3. Identify protocols and endpoints]
+    E --> F[4. Review DNS exchanges]
+    F --> G[5. Inspect TCP handshake]
+    G --> H[6. Examine TCP header]
+    H --> I[7. Follow TCP stream]
+    I --> J[Evaluate evidence and visibility gaps]
+    J --> K[Document supported findings and assessment]
+    K --> L[Review and redact public evidence copies]
+    L --> M[Publish reviewed case updates]
+```
 
-### 4. Examine DNS traffic
+## Evidence and Analysis
 
-Apply the display filter `dns`. If available, pair a query and response using transaction details and endpoints; record query type, response code, and returned records. Absence of visible DNS does not establish absence of name resolution: caching or encrypted DNS may limit visibility. Document an unavailable result honestly and plan another authorized sample if needed.
+### Step 1 — Identified the Active Network Interface
 
-**Evidence:** `04-dns-traffic-filter.png` · **Observation:** Pending.
+**Analysis pending.** During the test, review the available interfaces and record which one carries the authorized lab traffic. Explain the selection, including any VPN or virtual adapter that affects visibility.
 
-### 5. Inspect a TCP handshake
+**Screenshot pending:** `evidence/01-wireshark-interfaces.png`
 
-Apply `tcp`, select a connection, and isolate its actual stream index using `tcp.stream eq N`, replacing `N` with the observed numeric index. Locate SYN, SYN-ACK, and ACK packets in that same connection and record packet numbers, endpoint ports, and relative sequence behavior. If the capture began after establishment or packets are missing, state that the handshake was not fully observed.
+### Step 2 — Started the Live Packet Capture
 
-**Evidence:** `05-tcp-handshake.png` · **Observation:** Pending.
+**Analysis pending.** Record the controlled activity, capture start and stop times with timezone, duration, packet count, any capture filter, and any dropped-packet indication. Preserve the original privately and record its filename and SHA-256 hash.
 
-### 6. Examine a TCP header
+**Screenshot pending:** `evidence/02-live-packet-capture.png`
 
-Expand the TCP details for a selected packet. Record ports, flags, sequence and acknowledgment values, window information, and segment length. State whether sequence numbers are relative. Interpret fields in the surrounding stream context; one flag or port alone does not determine whether activity is malicious.
+### Step 3 — Reviewed Protocols and Network Addresses
 
-**Evidence:** `06-tcp-header-analysis.png` · **Observation:** Pending.
+**Analysis pending.** Review the Protocol, Source, Destination, and Info columns. Document only observed protocols and endpoints, with representative packet numbers and timestamps. Distinguish deliberate test activity from background communication where possible.
 
-### 7. Follow a TCP stream
+**Screenshot pending:** `evidence/03-protocol-identification.png`
 
-Use Follow TCP Stream for the selected connection. Record the actual stream index, endpoints, direction, and visible content or encryption limitations. TCP reassembly does not decrypt TLS. Avoid claiming application content that is not visible, and review payloads carefully before publishing the screenshot.
+### Step 4 — Filtered DNS Traffic
 
-**Evidence:** `07-follow-tcp-stream.png` · **Observation:** Pending.
+Planned Wireshark display filter:
 
-## Findings and indicator register
+```text
+dns
+```
 
-| Investigation question | Finding | Evidence reference |
-| --- | --- | --- |
-| Which host and interface were captured? | Pending | Pending |
-| Which protocols and endpoints appeared? | Pending | Pending |
-| What DNS behavior was visible? | Pending | Pending |
-| Was a complete TCP handshake observed? | Pending | Pending |
-| What did the TCP headers show? | Pending | Pending |
-| What could be established from the stream? | Pending | Pending |
-| Were there behaviors needing further investigation? | Pending | Pending |
+**Analysis pending.** If DNS packets are present, correlate queries and responses using endpoints and transaction details. Record query names, record types, response codes, and returned records. If none are visible, document that limitation; caching or encrypted DNS can affect visibility.
 
-No IP addresses, domains, packet numbers, counts, or traffic classifications have been assigned. After capture, record indicators with packet references and describe public redactions. An address or recognizable service name alone is insufficient to establish benign or malicious behavior.
+**Screenshot pending:** `evidence/04-dns-traffic-filter.png`
 
-## Assessment and limitations
+### Step 5 — Analyzed a TCP Connection
 
-**Assessment:** Pending actual capture and analysis.
+Planned Wireshark display filter:
 
-**Final disposition:** Pending. The case remains open for evidence collection; no claim of normal traffic or absence of compromise is made.
+```text
+tcp
+```
 
-Document capture duration, vantage point, encryption, caching, missing packets, background traffic, and any other limits that apply. A short capture supports conclusions about the reviewed sample, not the entire host or network.
+**Analysis pending.** Select an actual connection and isolate its stream using `tcp.stream eq N`, replacing `N` with the observed numeric index. Record endpoints, ports, and the packet numbers for SYN, SYN-ACK, and ACK if all three are captured. Report an incomplete handshake honestly if the capture misses establishment.
 
-## Evidence handling and publication
+**Screenshot pending:** `evidence/05-tcp-handshake.png`
 
-- Preserve the original capture and screenshots privately; record provenance, capture hash, and evidence timestamps.
-- Create separate reviewed copies for publication. Record redactions in each caption and retain packet references where possible.
-- Inspect addresses, hostnames, account details, browser tabs, payloads, tokens, and desktop identifiers. Do not publish decryption keys or session secrets.
-- Keep raw captures out of Git by default. Review the complete staged file list before committing.
-- If evidence is absent or inconclusive, report that limitation and leave the corresponding finding pending.
+### Step 6 — Examined the TCP Header
 
-## Completion checklist
+**Analysis pending.** Expand a selected TCP packet and record its ports, flags, sequence and acknowledgment values, window information, and segment length. State whether sequence numbers are relative, and explain the selected packet in the context of its connection.
 
-- [ ] Confirm authorization, host, interface, and controlled activity.
-- [ ] Record environment, capture window, provenance, and SHA-256.
-- [ ] Collect seven real screenshots or document unavailable evidence.
-- [ ] Add reviewed images with captions and packet references.
-- [ ] Replace pending findings with supported observations.
-- [ ] Record limitations and an evidence-backed disposition.
-- [ ] Review staged content and obtain approval before external publication.
+**Screenshot pending:** `evidence/06-tcp-header-analysis.png`
+
+### Step 7 — Followed a TCP Stream
+
+**Analysis pending.** Use Follow TCP Stream on the selected connection. Record the actual stream index, endpoints, directions, and any visible application content. Explain encryption or reassembly limitations; following a TCP stream does not decrypt TLS.
+
+**Screenshot pending:** `evidence/07-follow-tcp-stream.png`
+
+## Investigation Findings
+
+- Host and network configuration: **Pending**.
+- Observed protocols, addresses, domains, and ports: **Pending**.
+- DNS query and response behavior: **Pending**.
+- TCP handshake and header observations: **Pending**.
+- TCP stream observations and encryption limitations: **Pending**.
+- Behaviors requiring further investigation: **Pending**.
+
+Each completed finding will cite screenshots and packet references from my own capture. No traffic observations from the reference case are used as results here.
+
+## Analyst Assessment
+
+**Pending actual capture and analysis.** No benign or malicious classification has been assigned, and no claim of absence of compromise is made.
+
+The assessment will consider the capture scope, duration, vantage point, encryption, missing packets, and background activity. A familiar domain, an IP address, or a port alone is not enough to determine whether traffic is safe or malicious. Conclusions will apply to the reviewed sample.
+
+## Actions Taken
+
+- Prepared the case report and seven evidence placeholders.
+- Added the investigation workflow to this case-file README.
+- Documented private capture handling and publication requirements.
+
+Capture, filtering, packet analysis, screenshot collection, and operational response decisions are **pending**.
+
+## Final Disposition
+
+| Closure Detail | Result |
+|---|---|
+| Case status | Prepared — test pending |
+| Severity | Pending assessment |
+| Activity classification | Pending evidence review |
+| Malicious activity identified | Not yet assessed |
+| Containment required | Not yet assessed |
+| Escalation required | Not yet assessed |
+
+## Case Closure Notes
+
+**Not closed.** Complete this section after the test, explaining the evidence supporting the final decision, unresolved questions, and any follow-up required. If evidence is unavailable or inconclusive, record that limitation instead of inventing a result.
+
+## Evidence Handling and Publication
+
+Capture only traffic you own or have explicit permission to inspect. Use an authorized lab with controlled activity. Retain original captures and screenshots privately; record capture provenance, timestamps, and a SHA-256 hash. Analyze a working copy.
+
+Before adding screenshots, review addresses, hostnames, usernames, credentials, cookies, tokens, URLs, payloads, and surrounding desktop details. Redact public copies and disclose redactions in captions. Add image embeds only after reviewed screenshots exist.
+
+Raw captures and session secrets are excluded by default. Review staged files before every commit; `.gitignore` neither sanitizes files nor removes already tracked data. See [Capture Handling](../../captures/README.md).
+
+## Reference
+
+Section organization follows [JFrancisSOC's Wireshark case file](https://github.com/JFrancisSOC/Case-File-01-Investigating-Network-Traffic-with-WireShark/blob/main/README.md). The report text is original; all future observations and screenshots will come from my own authorized test.

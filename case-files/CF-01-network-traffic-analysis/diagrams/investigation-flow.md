@@ -2,7 +2,7 @@
 
 [Case file](../README.md)
 
-This diagram describes the planned method, not completed activity or observed traffic.
+The primary [Investigation Workflow](../README.md#investigation-workflow) is now embedded directly in the case-file README. This companion diagram describes the planned method, not completed activity or observed traffic.
 
 ```mermaid
 flowchart TD
@@ -22,4 +22,4 @@ flowchart TD
     M --> N[Request approval before publishing]
 ```
 
-Steps 1–7 map to the seven planned screenshot filenames in the [evidence register](../README.md#evidence-register). Any unobserved behavior must be documented as unavailable or inconclusive. Publication review must preserve the distinction between original private evidence and redacted public copies.
+Steps 1–7 map to the seven planned screenshot filenames in the [Evidence Collected](../README.md#evidence-collected). Any unobserved behavior must be documented as unavailable or inconclusive. Publication review must preserve the distinction between original private evidence and redacted public copies.

@@ -1,6 +1,6 @@
 # Capture Handling
 
-[Project overview](../README.md) · [CF-01 case file](../case-files/CF-01-network-traffic-analysis/README.md)
+[CF-01 case file](../case-files/CF-01-network-traffic-analysis/README.md)
 
 **Status:** No capture has been collected for this project.
 
