@@ -1,0 +1,34 @@
+# Raw captures and compressed variants: private by default.
+*.pcap
+*.pcapng
+*.cap
+*.pcap.*
+*.pcapng.*
+*.cap.*
+*.etl
+*.erf
+*.snoop
+
+# Secrets, private working copies, and local configuration.
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.keylog
+*sslkeylog*
+*SSLKEYLOG*
+*tls-keylog*
+private/
+raw/
+secrets/
+
+# Temporary and operating system files.
+*.tmp
+*.temp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
