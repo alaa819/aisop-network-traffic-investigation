@@ -29,7 +29,7 @@ Identify the interface carrying the authorized lab activity, collect a short cap
 
 ## Evidence Collected
 
-**Collection pending.** These are the seven planned evidence items; filenames are placeholders only. The `evidence/` folder currently contains only `.gitkeep`. No screenshot images have been created or copied.
+**Collection pending.** These are the seven planned evidence items; filenames are placeholders only. The `case-files/CF-01-network-traffic-analysis/evidence/` folder currently contains only `.gitkeep`. No screenshot images have been created or copied.
 
 | Step | Evidence | Planned filename |
 |---|---|---|
@@ -93,19 +93,19 @@ flowchart TD
 
 **Analysis pending.** During the test, review the available interfaces and record which one carries the authorized lab traffic. Explain the selection, including any VPN or virtual adapter that affects visibility.
 
-**Screenshot pending:** `evidence/01-wireshark-interfaces.png`
+**Screenshot pending:** `case-files/CF-01-network-traffic-analysis/evidence/01-wireshark-interfaces.png`
 
 ### Step 2 — Started the Live Packet Capture
 
 **Analysis pending.** Record the controlled activity, capture start and stop times with timezone, duration, packet count, any capture filter, and any dropped-packet indication. Preserve the original privately and record its filename and SHA-256 hash.
 
-**Screenshot pending:** `evidence/02-live-packet-capture.png`
+**Screenshot pending:** `case-files/CF-01-network-traffic-analysis/evidence/02-live-packet-capture.png`
 
 ### Step 3 — Reviewed Protocols and Network Addresses
 
 **Analysis pending.** Review the Protocol, Source, Destination, and Info columns. Document only observed protocols and endpoints, with representative packet numbers and timestamps. Distinguish deliberate test activity from background communication where possible.
 
-**Screenshot pending:** `evidence/03-protocol-identification.png`
+**Screenshot pending:** `case-files/CF-01-network-traffic-analysis/evidence/03-protocol-identification.png`
 
 ### Step 4 — Filtered DNS Traffic
 
@@ -117,7 +117,7 @@ dns
 
 **Analysis pending.** If DNS packets are present, correlate queries and responses using endpoints and transaction details. Record query names, record types, response codes, and returned records. If none are visible, document that limitation; caching or encrypted DNS can affect visibility.
 
-**Screenshot pending:** `evidence/04-dns-traffic-filter.png`
+**Screenshot pending:** `case-files/CF-01-network-traffic-analysis/evidence/04-dns-traffic-filter.png`
 
 ### Step 5 — Analyzed a TCP Connection
 
@@ -129,19 +129,19 @@ tcp
 
 **Analysis pending.** Select an actual connection and isolate its stream using `tcp.stream eq N`, replacing `N` with the observed numeric index. Record endpoints, ports, and the packet numbers for SYN, SYN-ACK, and ACK if all three are captured. Report an incomplete handshake honestly if the capture misses establishment.
 
-**Screenshot pending:** `evidence/05-tcp-handshake.png`
+**Screenshot pending:** `case-files/CF-01-network-traffic-analysis/evidence/05-tcp-handshake.png`
 
 ### Step 6 — Examined the TCP Header
 
 **Analysis pending.** Expand a selected TCP packet and record its ports, flags, sequence and acknowledgment values, window information, and segment length. State whether sequence numbers are relative, and explain the selected packet in the context of its connection.
 
-**Screenshot pending:** `evidence/06-tcp-header-analysis.png`
+**Screenshot pending:** `case-files/CF-01-network-traffic-analysis/evidence/06-tcp-header-analysis.png`
 
 ### Step 7 — Followed a TCP Stream
 
 **Analysis pending.** Use Follow TCP Stream on the selected connection. Record the actual stream index, endpoints, directions, and any visible application content. Explain encryption or reassembly limitations; following a TCP stream does not decrypt TLS.
 
-**Screenshot pending:** `evidence/07-follow-tcp-stream.png`
+**Screenshot pending:** `case-files/CF-01-network-traffic-analysis/evidence/07-follow-tcp-stream.png`
 
 ## Investigation Findings
 
@@ -163,7 +163,7 @@ The assessment will consider the capture scope, duration, vantage point, encrypt
 ## Actions Taken
 
 - Prepared the case report and seven evidence placeholders.
-- Added the investigation workflow to this case-file README.
+- Added the investigation workflow to this root case-report README.
 - Documented private capture handling and publication requirements.
 
 Capture, filtering, packet analysis, screenshot collection, and operational response decisions are **pending**.
@@ -189,7 +189,7 @@ Capture only traffic you own or have explicit permission to inspect. Use an auth
 
 Before adding screenshots, review addresses, hostnames, usernames, credentials, cookies, tokens, URLs, payloads, and surrounding desktop details. Redact public copies and disclose redactions in captions. Add image embeds only after reviewed screenshots exist.
 
-Raw captures and session secrets are excluded by default. Review staged files before every commit; `.gitignore` neither sanitizes files nor removes already tracked data. See [Capture Handling](../../captures/README.md).
+Raw captures and session secrets are excluded by default. Review staged files before every commit; `.gitignore` neither sanitizes files nor removes already tracked data. See [Capture Handling](captures/README.md).
 
 ## Reference
 
