@@ -182,15 +182,3 @@ Capture, filtering, packet analysis, screenshot collection, and operational resp
 ## Case Closure Notes
 
 **Not closed.** Complete this section after the test, explaining the evidence supporting the final decision, unresolved questions, and any follow-up required. If evidence is unavailable or inconclusive, record that limitation instead of inventing a result.
-
-## Evidence Handling and Publication
-
-Capture only traffic you own or have explicit permission to inspect. Use an authorized lab with controlled activity. Retain original captures and screenshots privately; record capture provenance, timestamps, and a SHA-256 hash. Analyze a working copy.
-
-Before adding screenshots, review addresses, hostnames, usernames, credentials, cookies, tokens, URLs, payloads, and surrounding desktop details. Redact public copies and disclose redactions in captions. Add image embeds only after reviewed screenshots exist.
-
-Raw captures and session secrets are excluded by default. Review staged files before every commit; `.gitignore` neither sanitizes files nor removes already tracked data. See [Capture Handling](captures/README.md).
-
-## Reference
-
-Section organization follows [JFrancisSOC's Wireshark case file](https://github.com/JFrancisSOC/Case-File-01-Investigating-Network-Traffic-with-WireShark/blob/main/README.md). The report text is original; all future observations and screenshots will come from my own authorized test.
