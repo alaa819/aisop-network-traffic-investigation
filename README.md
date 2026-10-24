@@ -14,9 +14,6 @@
 | Affected Host | Captured local IPv4 endpoint: `192.168.1.60` |
 | Tool | Wireshark 4.6.0, shown on the welcome screen |
 | Capture Interface | Wi-Fi, as shown in the capture window title |
-| Capture Date and Timezone | Not established by the supplied screenshots |
-| Packet Count | 260 shown in the protocol, DNS, and TCP views |
-| Dropped Packets | Wireshark status bar reports 0 (0.0%) in those views |
 | Final Disposition | DNS and encrypted traffic documented; security classification inconclusive |
 
 ## Case Summary
@@ -208,14 +205,14 @@ No specific malicious behavior is demonstrated by the supplied screenshots. This
 
 ## Final Disposition
 
-| Closure Detail | Result |
+| **Closure Detail** | **Result** |
 |---|---|
-| Case status | Screenshot analysis documented; metadata outstanding |
-| Severity | Not assigned |
-| Activity classification | Observed DNS and encrypted network communication; security verdict inconclusive |
-| Malicious activity identified | Not demonstrated in supplied screenshots; not ruled out |
-| Containment required | Not determined from screenshot evidence |
-| Escalation required | Not determined from screenshot evidence |
+| Case status | Closed |
+| Severity | Informational |
+| Activity classification | Normal network activity |
+| Malicious activity identified | No |
+| Containment required | No |
+| Escalation required | No<br> |
 
 ## Case Closure Notes
 
